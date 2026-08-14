@@ -30,7 +30,7 @@
     "genres": ["Animation", "Fantasy", "Drama"],
     "moods": ["journey", "emotional", "mythic"],
     "tags": ["doors", "memories", "anime"],
-    "poster": "suzume.jpg",
+    "poster": "images/suzume.jpg",
     "accent": ["#26384f", "#7aa0c5"],
     "logline": "A road movie of doors, disasters, and memory across modern Japan.",
     "review": "Added because the atmosphere feels like the right mix of wonder and ache."
@@ -47,7 +47,7 @@
     "genres": ["Drama"],
     "moods": ["quiet", "reflective", "human"],
     "tags": ["routine", "tokyo", "life"],
-    "poster": "perfect-days.webp",
+    "poster": "images/perfect-days.webp",
     "accent": ["#3f4a3f", "#c3a15f"],
     "logline": "A quiet character study about routine, solitude, music, and noticing small moments.",
     "review": "Queued for a slow night when a calm, human film sounds right."
@@ -65,7 +65,7 @@
     "genres": ["Animation", "Romance", "Fantasy"],
     "moods": ["longing", "beautiful", "bittersweet"],
     "tags": ["time", "memory", "anime"],
-    "poster": "your-name.jpg",
+    "poster": "images/your-name.jpg",
     "accent": ["#314d71", "#d4817a"],
     "logline": "Two teenagers become linked through a strange body-swapping connection that bends distance and time.",
     "review": "A gorgeous emotional puzzle with a huge sense of place and destiny.",
@@ -84,7 +84,7 @@
     "genres": ["Drama", "Romance"],
     "moods": ["gentle", "lonely", "warm"],
     "tags": ["letters", "mumbai", "food"],
-    "poster": "the-lunchbox.jpg",
+    "poster": "images/the-lunchbox.jpg",
     "accent": ["#5b4a36", "#d0a85b"],
    
     "review": "Small, patient, and deeply felt. The kind of film that makes ordinary details glow.",
