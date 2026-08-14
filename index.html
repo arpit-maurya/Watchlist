@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090a0d">
+  <title>Kaiho Movie Vault</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="shell">
+
+  <header>
+    <a class="brand" href="index.html">
+      <b>K</b>
+      Kaiho <span>Movie Vault</span>
+    </a>
+
+    <nav>
+      <a class="active" href="index.html">Home</a>
+      <a href="watched.html">Watched</a>
+      <a href="watch-later.html">Watch Later</a>
+    </nav>
+
+    <button class="menu" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <div id="mobileMenu">
+    <a class="active" href="index.html">Home</a>
+    <a href="watched.html">Watched</a>
+    <a href="watch-later.html">Watch Later</a>
+  </div>
+
+  <main>
+
+    <section class="hero">
+      <small>YOUR MOVIE UNIVERSE</small>
+
+      <h1>
+        Movies that
+        <i>stay with you.</i>
+      </h1>
+
+      <p>
+        A quiet place for the films you've watched,
+        loved, and still want to discover.
+      </p>
+    </section>
+
+
+    <section class="head">
+
+      <div>
+        <small>YOUR HIGHLIGHT</small>
+        <h2>Highest rated</h2>
+      </div>
+
+      <a href="watched.html">See watched →</a>
+
+    </section>
+
+
+    <!-- ADD MORE RATING CARDS HERE -->
+
+    <article class="feature">
+
+      <div class="poster ek">
+        <strong>
+          EK<br>
+          DIN
+        </strong>
+      </div>
+
+      <div class="info">
+
+        <div class="rating">
+          ★ 9.5 <em>/ 10</em>
+        </div>
+
+        <h3>Ek Din</h3>
+
+        <p class="meta">
+          Japanese · Romance · Drama · 2025
+        </p>
+
+        <p>
+          A modern romance with Japanese culture,
+          an ordinary IT guy, and a story about
+          remembering what matters.
+        </p>
+
+        <div class="tags">
+          <span>#romance</span>
+          <span>#japanese</span>
+          <span>#emotional</span>
+        </div>
+
+        <a class="btn" href="watched.html">
+          View movie
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <section class="head next">
+
+      <div>
+        <small>NEXT UP</small>
+        <h2>Watch later</h2>
+      </div>
+
+      <a href="watch-later.html">
+        View all →
+      </a>
+
+    </section>
+
+
+    <!-- ADD MORE WATCH-LATER CARDS HERE -->
+
+    <article class="mini">
+
+      <div class="poster suzu">
+        <strong>
+          SUZU<br>
+          ME
+        </strong>
+      </div>
+
+      <div>
+
+        <label>WATCH LATER</label>
+
+        <h3>Suzume</h3>
+
+        <p>
+          Animation · Fantasy · Drama
+        </p>
+
+        <p class="muted">
+          Added because the mood feels right.
+        </p>
+
+      </div>
+
+      <a class="arrow" href="watch-later.html">
+        ↗
+      </a>
+
+    </article>
+
+  </main>
+
+  <footer>
+    Built as a personal movie journal · KaihoCore
+  </footer>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

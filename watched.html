@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090a0d">
+
+  <title>Watched · Kaiho Movie Vault</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="shell">
+
+  <header>
+
+    <a class="brand" href="index.html">
+      <b>K</b>
+      Kaiho <span>Movie Vault</span>
+    </a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a class="active" href="watched.html">Watched</a>
+      <a href="watch-later.html">Watch Later</a>
+    </nav>
+
+    <button class="menu" onclick="toggleMenu()">☰</button>
+
+  </header>
+
+
+  <div id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a class="active" href="watched.html">Watched</a>
+    <a href="watch-later.html">Watch Later</a>
+  </div>
+
+
+  <main>
+
+    <section class="hero">
+
+      <small>YOUR ARCHIVE</small>
+
+      <h1>
+        Watched movies.
+      </h1>
+
+      <p>
+        Not a database.
+        A record of what you actually experienced.
+      </p>
+
+    </section>
+
+
+    <div class="toolbar">
+
+      <span>1 movie</span>
+
+      <button>
+        All ratings⌄
+      </button>
+
+    </div>
+
+
+    <!--
+      ADD MORE WATCHED MOVIE CARDS HERE.
+
+      Copy the <article class="row">...</article>
+      below and change the movie information.
+    -->
+
+
+    <article class="row">
+
+      <div class="poster ek">
+        <strong>
+          EK<br>
+          DIN
+        </strong>
+      </div>
+
+
+      <div class="rowinfo">
+
+        <div class="rowtop">
+
+          <span class="rating">
+            ★ 9.5
+          </span>
+
+          <span>
+            12 Aug 2026
+          </span>
+
+        </div>
+
+
+        <h2>
+          Ek Din
+        </h2>
+
+
+        <p class="meta">
+          Japanese · Romance · Drama · 2025
+        </p>
+
+
+        <p>
+          A modern romance mixed with Japanese culture,
+          following an ordinary IT guy who becomes involved
+          in a deeply personal mystery.
+        </p>
+
+
+        <div class="tags">
+
+          <span>#romance</span>
+          <span>#japanese</span>
+          <span>#IT</span>
+          <span>#emotional</span>
+
+        </div>
+
+
+        <div class="note">
+
+          <b>My note</b>
+
+          <br>
+
+          “Japanese culture mixed with modern love,
+          served with an IT guy.
+          The ending hit differently.”
+
+        </div>
+
+      </div>
+
+    </article>
+
+  </main>
+
+
+  <footer>
+    Your archive · one movie at a time
+  </footer>
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>

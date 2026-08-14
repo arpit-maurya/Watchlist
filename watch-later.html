@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  >
+
+  <meta
+    name="theme-color"
+    content="#090a0d"
+  >
+
+  <title>
+    Watch Later · Kaiho Movie Vault
+  </title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  >
+
+</head>
+
+
+<body>
+
+<div class="shell">
+
+
+  <header>
+
+    <a
+      class="brand"
+      href="index.html"
+    >
+
+      <b>K</b>
+
+      Kaiho
+      <span>Movie Vault</span>
+
+    </a>
+
+
+    <nav>
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="watched.html">
+        Watched
+      </a>
+
+      <a
+        class="active"
+        href="watch-later.html"
+      >
+        Watch Later
+      </a>
+
+    </nav>
+
+
+    <button
+      class="menu"
+      onclick="toggleMenu()"
+    >
+      ☰
+    </button>
+
+  </header>
+
+
+  <div id="mobileMenu">
+
+    <a href="index.html">
+      Home
+    </a>
+
+    <a href="watched.html">
+      Watched
+    </a>
+
+    <a
+      class="active"
+      href="watch-later.html"
+    >
+      Watch Later
+    </a>
+
+  </div>
+
+
+  <main>
+
+
+    <section class="hero">
+
+      <small>
+        THE QUEUE
+      </small>
+
+
+      <h1>
+        Watch later.
+      </h1>
+
+
+      <p>
+        Films waiting for the right evening.
+      </p>
+
+    </section>
+
+
+    <div class="queue">
+
+      <b>✦</b>
+
+      <span>
+
+        <strong>
+          Keep it small.
+        </strong>
+
+        <br>
+
+        Short lists make choosing easier.
+
+      </span>
+
+    </div>
+
+
+    <!--
+      ADD MORE WATCH-LATER CARDS HERE.
+
+      Copy the <article class="row">...</article>
+      below for another movie.
+    -->
+
+
+    <article class="row">
+
+
+      <div class="poster suzu">
+
+        <strong>
+          SUZU<br>
+          ME
+        </strong>
+
+      </div>
+
+
+      <div class="rowinfo">
+
+
+        <div class="rowtop">
+
+          <label>
+            WATCH LATER
+          </label>
+
+          <span>
+            Priority · High
+          </span>
+
+        </div>
+
+
+        <h2>
+          Suzume
+        </h2>
+
+
+        <p class="meta">
+          Japanese · Animation · Fantasy · Drama
+        </p>
+
+
+        <p>
+          A mysterious journey through modern Japan,
+          built around doors, memories, and a young
+          girl's search for answers.
+        </p>
+
+
+        <div class="tags">
+
+          <span>#japanese</span>
+          <span>#animation</span>
+          <span>#emotional</span>
+
+        </div>
+
+
+        <button class="btn dark">
+          Move to watched
+        </button>
+
+
+      </div>
+
+    </article>
+
+
+  </main>
+
+
+  <footer>
+    Your queue · curated by you
+  </footer>
+
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
