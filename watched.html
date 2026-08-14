@@ -3,178 +3,66 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#090a0d">
-
-  <title>Watched · Kaiho Movie Vault</title>
+  <meta name="theme-color" content="#0d0f12">
+  <meta name="description" content="Watched movies from Kaiho Movie Vault.">
+  <title>Watched | Kaiho Movie Vault</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
-    rel="stylesheet"
-  >
-
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/kaihocore.png">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <div class="shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Kaiho Movie Vault home">
+        <span class="brand-mark">
+          <img src="images/kaihocore.png" alt="">
+        </span>
+        <span>Kaiho <b>Movie Vault</b></span>
+      </a>
 
-<div class="shell">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="watched.html">Watched</a>
+        <a href="watch-later.html">Watch Later</a>
+        <a href="suggest.html">Suggest</a>
+      </nav>
 
-  <header>
+      <button class="menu" type="button" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">Menu</button>
+    </header>
 
-    <a class="brand" href="index.html">
-      <b>K</b>
-      Kaiho <span>Movie Vault</span>
-    </a>
-
-    <nav>
+    <div id="mobileMenu" class="mobile-menu" aria-label="Mobile navigation">
       <a href="index.html">Home</a>
       <a class="active" href="watched.html">Watched</a>
       <a href="watch-later.html">Watch Later</a>
-    </nav>
-
-    <button class="menu" onclick="toggleMenu()">☰</button>
-
-  </header>
-
-
-  <div id="mobileMenu">
-    <a href="index.html">Home</a>
-    <a class="active" href="watched.html">Watched</a>
-    <a href="watch-later.html">Watch Later</a>
-  </div>
-
-
-  <main>
-
-    <section class="hero">
-
-      <small>YOUR ARCHIVE</small>
-
-      <h1>
-        Watched movies.
-      </h1>
-
-      <p>
-        Not a database.
-        A record of what you actually experienced.
-      </p>
-
-    </section>
-
-
-    <div class="toolbar">
-
-      <span>1 movie</span>
-
-      <div class="sort">
-        <span>Sort by</span>
-        <select>
-          <option value="date">Date watched</option>
-          <option value="rating">Rating</option>
-          <option value="title">Title</option>
-        </select>
-      </div>
-
+      <a href="suggest.html">Suggest</a>
     </div>
 
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">Your archive</p>
+        <h1>Watched movies.</h1>
+        <p>The record of films you finished, rated, and left notes on.</p>
+      </section>
 
-    <!--
-      ADD MORE WATCHED MOVIE CARDS HERE.
-
-      Copy the <article class="row">...</article>
-      below and change the movie information.
-    -->
-
-
-    <article class="row">
-
-      <div class="poster ek">
-        <img src="images/ek-din.webp" alt="Ek Din poster" height="50%" loading="lazy"  decoding="async">
-      
-
-     
-        <strong>
-          EK<br>
-          DIN
-        </strong>
-      </div>
-
-
-      <div class="rowinfo">
-
-        <div class="rowtop">
-
-          <span class="rating">
-            ★ 9.5
-          </span>
-
-          <span>
-            12 Aug 2026
-          </span>
-
+      <section class="section-head compact">
+        <div>
+          <p class="eyebrow">Sorted by rating</p>
+          <h2 data-count="watched">Watched</h2>
         </div>
+        <a href="index.html">Full database</a>
+      </section>
 
+      <section class="movie-list" data-view="watched" aria-live="polite"></section>
+    </main>
 
-        <h2>
-          Ek Din
-        </h2>
+    <footer>
+      Your archive, one movie at a time.
+    </footer>
+  </div>
 
-
-        <p class="meta">
-          Japanese · Romance · Drama · 2025
-        </p>
-
-
-        <p>
-          A modern romance mixed with Japanese culture,
-          following an ordinary IT guy who becomes involved
-          in a deeply personal mystery. A modern romance with Japanese culture,
-          an ordinary IT guy, and a story about
-          remembering what matters.
-          Dinesh loves his colleague Meera, but can't confess his feelings. During a company trip, Dinesh makes a wish under a magical bell for Meera to become his girlfriend for a day and his wish comes true.
-        </p>
-
-
-        <div class="tags">
-
-          <span>#romance</span>
-          <span>#japanese</span>
-          <span>#IT</span>
-          <span>#emotional</span>
-
-        </div>
-
-
-        <div class="note">
-
-          <b>My note</b>
-
-          <br>
-
-          “Japanese culture mixed with modern love,
-          served with an IT guy.
-          The ending hit differently.”
-
-        </div>
-
-      </div>
-
-    </article>
-
-  </main>
-
-
-  <footer>
-    Your archive · one movie at a time
-  </footer>
-
-</div>
-
-
-<script src="app.js"></script>
-
+  <script src="app.js"></script>
 </body>
 </html>

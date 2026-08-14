@@ -1,58 +1,96 @@
-# 🎬 Kaiho Movie Vault
+# Kaiho Movie Vault
 
-A minimalist personal movie journal for keeping track of the films you've watched, the ones you want to watch, and the movies that actually stayed with you.
+Kaiho Movie Vault is a personal, client-side movie database for GitHub Pages.
 
-Kaiho Movie Vault is intentionally simple. It isn't trying to become another giant movie database. It's a small, personal space for your own movie history, ratings, descriptions, and notes.
+It is designed as a public read-only site: visitors can browse your watched movies, watch-later queue, ratings, notes, moods, and tags, but they cannot modify the movie database from the website.
 
-## ✨ Features
+## What changed
 
-- 🏠 **Home** — A welcoming overview based around your highest-rated movies
-- 🎬 **Watched** — Keep a record of movies you've already seen
-- 🍿 **Watch Later** — Maintain a curated queue of movies you want to watch
-- ⭐ **Personal ratings** — Give movies your own rating
-- 📝 **Personal notes** — Remember what you actually thought about a movie
-- 🏷️ **Genre & mood tags** — Quickly describe the kind of movie it was
-- 📱 **Responsive design** — Designed for both desktop and mobile
-- 🌙 **Dark cinematic UI**
-- ⚡ **No framework or build system**
-- 🪶 **Lightweight and easy to customize**
-- 🖼️ **Custom movie artwork/posters**
+- Static movie database in `data/movies.json`
+- Home page with spotlight, stats, search, status filter, and sorting
+- Watched page generated from the database
+- Watch Later page generated from the database
+- Suggestion page that opens a prefilled email to `mauryaarpit2008@gmail.com`
+- No backend, no Node server, no framework, and no build step
 
-## 🧱 Tech Stack
+## Edit Your Movie Database
 
-Kaiho Movie Vault is deliberately built with basic web technologies:
+Open `data/movies.json` and add or edit movie objects.
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- Google Fonts
+Use `status: "watched"` for archive entries:
 
-There is currently:
+```json
+{
+  "id": "example-movie",
+  "title": "Example Movie",
+  "posterTitle": "EXAMPLE",
+  "year": 2026,
+  "language": "Hindi",
+  "country": "India",
+  "status": "watched",
+  "rating": 9.2,
+  "watchedDate": "2026-08-14",
+  "genres": ["Drama"],
+  "moods": ["emotional"],
+  "tags": ["personal"],
+  "poster": "images/example.webp",
+  "accent": ["#26384f", "#c48762"],
+  "logline": "Short public description.",
+  "review": "Longer public description.",
+  "note": "Your private-style public note."
+}
+```
 
-- No React
-- No Node.js
-- No database
-- No backend
-- No build process
-- No external JavaScript framework
+Use `status: "watch-later"` for queue entries:
 
-This makes the project extremely easy to host and modify.
+```json
+{
+  "id": "queued-movie",
+  "title": "Queued Movie",
+  "posterTitle": "QUEUED",
+  "year": 2025,
+  "language": "Japanese",
+  "country": "Japan",
+  "status": "watch-later",
+  "priority": "high",
+  "genres": ["Animation", "Drama"],
+  "moods": ["quiet"],
+  "tags": ["anime"],
+  "poster": "",
+  "accent": ["#384b66", "#9f7068"],
+  "logline": "Why it is in the queue.",
+  "review": "A little more context."
+}
+```
 
-## 📁 Project Structure
+## Posters
 
-```text
-kaiho-movie-vault/
-│
-├── index.html
-├── watched.html
-├── watch-later.html
-│
-├── styles.css
-├── app.js
-│
-├── images/
-│   ├── ek-din.jpg
-│   ├── suzume.jpg
-│   └── ...
-│
-└── README.md
+Add poster images inside `images/`, then set the movie's `poster` value:
+
+```json
+"poster": "images/my-poster.webp"
+```
+
+If `poster` is empty, the site creates a styled text poster using `posterTitle` and `accent`.
+
+## Suggestions
+
+`suggest.html` uses a client-side form. When someone submits it:
+
+- their email app opens with a prefilled message to `mauryaarpit2008@gmail.com`
+- a local copy is saved in that visitor's browser storage
+- the public database is not changed
+
+For automatic central storage, you would need a third-party form service or a backend. This project intentionally avoids that so it remains GitHub Pages friendly.
+
+## GitHub Pages
+
+Publish the repository as a static site:
+
+1. Push these files to GitHub.
+2. Open the repository settings.
+3. Go to Pages.
+4. Choose the branch and root folder.
+5. Save.
+
+The site should work without a build command.
