@@ -78,15 +78,15 @@
     "year": 2013,
     "language": "Hindi",
     "country": "India",
-    "status": "watch-later",
+    "status": "watched",
     "rating": 8.8,
-    "watchedDate": "2026-07-16",
+    "watchedDate": "2026-08-15",
     "genres": ["Drama", "Romance"],
     "moods": ["gentle", "lonely", "warm"],
     "tags": ["letters", "mumbai", "food"],
     "poster": "images/the-lunchbox.jpg",
     "accent": ["#5b4a36", "#d0a85b"],
-   
+    "logline": "A mistaken lunchbox delivery leads to a correspondence between a lonely office worker and a neglected housewife.",   
     "review": "Small, patient, and deeply felt. The kind of film that makes ordinary details glow.",
     "note": "Proof that a tiny premise can hold an entire city."
   },
@@ -105,7 +105,7 @@
     "tags": ["mohenjo-daro", "history", "action"],
     "poster": "images/mohenjo-daro.jpg",
     "accent": ["#27344d", "#815e66"],
-    "logline": "a ancient romance story of a indigo farmer who visits mohenjo daro and falls in love with a girl",
+    "logline": "An ancient romance story of a indigo farmer who visits mohenjo daro and falls in love with a girl",
     "review": "sarman, the hero of the movie is a indigo farmer. He visits mohenjo daro and falls in love with a girl. He fights against the evil and saves the girl. The movie is based on the ancient city of mohenjo daro.",
     "note": "A guy lives in a distinct village called amri. He is a indigo farmer. one day he visits mohenjo daro and falls in love with a girl. He fights against the evil and saves the girl. The movie is based on the ancient city of mohenjo daro. https://youtu.be/hTlEQPoa4Dg?si=rEQ__STPvOsB5nYV"
   }
