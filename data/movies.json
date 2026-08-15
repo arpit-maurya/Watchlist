@@ -89,5 +89,24 @@
    
     "review": "Small, patient, and deeply felt. The kind of film that makes ordinary details glow.",
     "note": "Proof that a tiny premise can hold an entire city."
+  },
+  {
+    "id": "mohenjo-daro",
+    "title": "Mohenjo-Daro",
+    "posterTitle": "MOHENJO-DARO",
+    "year": 2016,
+    "language": "Hindi",
+    "country": "India",
+    "status": "watched",
+    "rating": 9.3,
+    "watchedDate": "2026-08-15",
+    "genres": ["Romance", "history", "drama"],
+    "moods": ["emotional", "soft", "action"],
+    "tags": ["mohenjo-daro", "history", "action"],
+    "poster": "images/mohenjo-daro.jpg",
+    "accent": ["#27344d", "#815e66"],
+    "logline": "a ancient romance story of a indigo farmer who visits mohenjo daro and falls in love with a girl",
+    "review": "sarman, the hero of the movie is a indigo farmer. He visits mohenjo daro and falls in love with a girl. He fights against the evil and saves the girl. The movie is based on the ancient city of mohenjo daro.",
+    "note": "A guy lives in a distinct village called amri. He is a indigo farmer. one day he visits mohenjo daro and falls in love with a girl. He fights against the evil and saves the girl. The movie is based on the ancient city of mohenjo daro."
   }
 ]
